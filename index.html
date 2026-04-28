@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>이메일 연락처</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">QA Note Hands-on</p>
+        <h1 id="page-title">이메일 연락처</h1>
+        <p class="lead">
+          이 페이지는 QA Note 핸즈온에서 참가자들이 직접 이슈를 만들고,
+          AI 수정으로 연락처 테이블을 채워보는 정적 HTML 테스트 사이트입니다.
+        </p>
+      </section>
+
+      <section class="panel" aria-labelledby="contacts-title">
+        <div class="panel-header">
+          <div>
+            <h2 id="contacts-title">참가자 연락처</h2>
+            <p>아직 등록된 연락처가 없습니다. QA Note 이슈로 본인 행을 추가해 보세요.</p>
+          </div>
+          <span class="status-pill">Ready for QA</span>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <caption>
+              핸즈온 참가자의 이름, 역할, 이메일, 선호 색상, 한마디
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">이름</th>
+                <th scope="col">역할</th>
+                <th scope="col">이메일</th>
+                <th scope="col">선호 색상</th>
+                <th scope="col">한마디</th>
+              </tr>
+            </thead>
+            <tbody id="contact-rows">
+              <!-- QANOTE_CONTACT_ROWS_START -->
+              <!-- 참가자 행은 이 구간에 추가합니다. 예:
+              <tr>
+                <td>홍길동</td>
+                <td>Frontend</td>
+                <td><a href="mailto:gildong@example.com">gildong@example.com</a></td>
+                <td><span class="swatch coral"></span>Coral</td>
+                <td>QA Note로 첫 PR을 만들어 봅니다.</td>
+              </tr>
+              -->
+              <!-- QANOTE_CONTACT_ROWS_END -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="empty-state" aria-live="polite">
+          <strong>첫 번째 참가자를 기다리는 중</strong>
+          <span>익스텐션으로 이 빈 테이블을 캡처하고, 본인 정보를 추가하는 이슈를 만들어 보세요.</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
